@@ -16,6 +16,7 @@ const Seats = () => {
   return (
     <div className="seatContainer">
       <div className="seatParent">
+        <h1>RECLINER-Rs. 300.00</h1>
         <div className="seatChild1">
           {rows.map(
             (row, index) =>
@@ -52,6 +53,7 @@ const Seats = () => {
               )
           )}
         </div>
+        <h1>PRIME-Rs. 150.00</h1>
         <div className="seatChild2">
           {rows.map(
             (row, index) =>
@@ -89,6 +91,7 @@ const Seats = () => {
               )
           )}
         </div>
+        <h1>CLASSIC-Rs. 150.00</h1>
         <div className="seatChild3">
           {rows.map(
             (row, index) =>

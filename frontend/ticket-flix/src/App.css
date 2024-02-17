@@ -150,12 +150,12 @@
 /* Seat.jsx */
 @media only screen and (max-width: 375px) {
   .wrapper {
-    zoom: 0.2;
+    zoom: 0.22;
   }
 }
-@media only screen and (min-width: 375px) and (max-width: 625px) {
+@media only screen and (min-width: 376px) and (max-width: 625px) {
   .wrapper {
-    zoom: 0.3;
+    zoom: 0.28;
   }
 }
 @media only screen and (min-width: 625px) and (max-width: 900px) {
