@@ -153,17 +153,23 @@
     zoom: 0.2;
   }
 }
-/* @media only screen and (max-width: 425px) {
+@media only screen and (min-width: 375px) and (max-width: 625px) {
   .wrapper {
-    zoom: 1;
+    zoom: 0.3;
   }
-} */
-@media only screen and (min-width: 1024px) {
+}
+@media only screen and (min-width: 625px) and (max-width: 900px) {
+  .wrapper {
+    zoom: 0.4;
+  }
+}
+@media only screen and (min-width: 901px) and (max-width: 1200px) {
+  .wrapper {
+    zoom: 0.6;
+  }
+}
+@media only screen and (min-width: 1025px) {
   .wrapper {
     zoom: 0.8;
-    background-color: aqua;
-    display: flex;
-    align-content: center;
-    justify-content: center;
   }
 }
