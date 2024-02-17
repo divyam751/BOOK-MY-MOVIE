@@ -16,7 +16,9 @@ const Seats = () => {
   return (
     <div className="seatContainer">
       <div className="seatParent">
-        <h1>RECLINER-Rs. 300.00</h1>
+        <div className="seatPriceRange">
+          <p>RECLINER-Rs. 300.00</p>
+        </div>
         <div className="seatChild1">
           {rows.map(
             (row, index) =>
@@ -53,7 +55,9 @@ const Seats = () => {
               )
           )}
         </div>
-        <h1>PRIME-Rs. 150.00</h1>
+        <div className="seatPriceRange">
+          <p>PRIME-Rs. 250.00</p>
+        </div>
         <div className="seatChild2">
           {rows.map(
             (row, index) =>
@@ -91,7 +95,9 @@ const Seats = () => {
               )
           )}
         </div>
-        <h1>CLASSIC-Rs. 150.00</h1>
+        <div className="seatPriceRange">
+          <p>CLASSIC-Rs. 150.00</p>
+        </div>
         <div className="seatChild3">
           {rows.map(
             (row, index) =>
@@ -128,6 +134,9 @@ const Seats = () => {
               )
           )}
         </div>
+      </div>
+      <div className="tv-container">
+        <div className="tv-screen">Screen</div>
       </div>
     </div>
   );
