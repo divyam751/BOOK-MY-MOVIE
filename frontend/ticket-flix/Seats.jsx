@@ -7,7 +7,7 @@ const Seats = () => {
   }, [rows]);
 
   const handleSelect = (seat) => {
-    console.log(seat.row + seat.id);
+    console.log(seat.id);
   };
 
   const getLastTenSeats = (row) => row.slice(-10);
@@ -35,7 +35,7 @@ const Seats = () => {
                           className="seat"
                           onClick={() => handleSelect(seat)}
                         >
-                          <h1>{seat.id}</h1>
+                          <h1>{seat.seatNumber}</h1>
                         </div>
                       ))}
                     </div>
@@ -46,7 +46,7 @@ const Seats = () => {
                           className="seat"
                           onClick={() => handleSelect(seat)}
                         >
-                          <h1>{seat.id}</h1>
+                          <h1>{seat.seatNumber}</h1>
                         </div>
                       ))}
                     </div>
@@ -75,7 +75,7 @@ const Seats = () => {
                           className="seat"
                           onClick={() => handleSelect(seat)}
                         >
-                          <h1>{seat.id}</h1>
+                          <h1>{seat.seatNumber}</h1>
                         </div>
                       ))}
                     </div>
@@ -86,7 +86,7 @@ const Seats = () => {
                           className="seat"
                           onClick={() => handleSelect(seat)}
                         >
-                          <h1>{seat.id}</h1>
+                          <h1>{seat.seatNumber}</h1>
                         </div>
                       ))}
                     </div>
@@ -114,7 +114,7 @@ const Seats = () => {
                           className="seat"
                           onClick={() => handleSelect(seat)}
                         >
-                          <h1>{seat.id}</h1>
+                          <h1>{seat.seatNumber}</h1>
                         </div>
                       ))}
                     </div>
@@ -125,7 +125,7 @@ const Seats = () => {
                           className="seat"
                           onClick={() => handleSelect(seat)}
                         >
-                          <h1>{seat.id}</h1>
+                          <h1>{seat.seatNumber}</h1>
                         </div>
                       ))}
                     </div>

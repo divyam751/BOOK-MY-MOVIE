@@ -1,0 +1,166 @@
+/* Seat.jsx */
+.seatContainer {
+  width: fit-content;
+  min-height: 100vh;
+  /* background-color: gray; */
+  /* overflow-x: auto;
+      white-space: nowrap; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.seatParent {
+  width: 1500px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  /* overflow-x: auto;
+      white-space: nowrap; */
+}
+.seatPriceRange {
+  width: 100%;
+  text-align: start;
+  padding: 20px 0px;
+  margin-left: 50px;
+  border-bottom: 2px solid lightgray;
+}
+.seatChild3,
+.seatChild2,
+.seatChild1 {
+  /* border: 2px solid black;
+      border-left: none;
+      border-right: none; */
+  display: flex;
+  flex-direction: column;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.rowParentBox {
+  display: flex;
+  width: 1400px;
+  justify-content: space-between;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.rowNameBox {
+  width: fit-content;
+  height: fit-content;
+  background-color: grey;
+  text-align: center;
+  display: flex;
+  align-content: center;
+}
+.rowNumber {
+  width: 50px;
+  height: 50px;
+  background-color: green;
+  color: white;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  border: 2px solid;
+}
+.rowChildFlex-first {
+  display: flex;
+  width: 1400px;
+  justify-content: center;
+}
+.rowChildFlex {
+  display: flex;
+  gap: 200px;
+  width: fit-content;
+}
+
+.rowChildLeft {
+  width: fit-content;
+  height: 100%;
+  display: flex;
+}
+.rowChildRight {
+  width: fit-content;
+  height: 100%;
+  display: flex;
+}
+.seat {
+  min-width: 50px;
+  min-height: 50px;
+  background-color: purple;
+  color: white;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  border: 2px solid;
+}
+.booked {
+  background-color: black;
+}
+/* .screenContainer {
+      width: 400px;
+      height: 400px;
+    
+      margin-bottom: 200px;
+    }
+    .screenBack {
+      width: 100%;
+      height: 200px;
+      background-color: white;
+      margin-top: -220px;
+      border-radius: 50%;
+    }
+    .screenFront {
+      width: 100%;
+      height: 200px;
+      background-color: black;
+      border-radius: 50%;
+    } */
+
+.tv-container {
+  perspective: 300px; /* Set the perspective for 3D effect */
+  filter: drop-shadow(30px 10px 4px grey);
+}
+
+.tv-screen {
+  width: 400px; /* Set the width of the TV screen */
+  height: 150px; /* Set the height of the TV screen */
+  background-image: url("https://images4.alphacoders.com/133/1336451.jpg"); /* Replace with the path to your TV image */
+  background-size: cover;
+  transform: rotateX(
+    240deg
+  ); /* Adjust the rotation angle for the desired top view */
+  margin: 100px auto; /* Adjust the margin to position it on the floor */
+  position: relative;
+}
+
+/* Seat.jsx */
+@media only screen and (max-width: 375px) {
+  .wrapper {
+    zoom: 0.22;
+  }
+}
+@media only screen and (min-width: 376px) and (max-width: 625px) {
+  .wrapper {
+    zoom: 0.28;
+  }
+}
+@media only screen and (min-width: 625px) and (max-width: 900px) {
+  .wrapper {
+    zoom: 0.4;
+  }
+}
+@media only screen and (min-width: 901px) and (max-width: 1200px) {
+  .wrapper {
+    zoom: 0.6;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .wrapper {
+    zoom: 0.8;
+  }
+}

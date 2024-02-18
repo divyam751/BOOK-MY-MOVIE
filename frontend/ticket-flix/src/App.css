@@ -13,11 +13,11 @@
   /* background-color: #023047; */
 }
 .wrapper {
-  min-height: 100vh;
-  border: 2px solid white;
-  display: flex;
+  /* min-height: 100vh;
+  border: 2px solid white; */
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
 }
 
 /* Signup */
@@ -57,169 +57,251 @@
   }
 }
 
-/* Seat.jsx */
-.seatContainer {
-  width: fit-content;
-  min-height: 100vh;
-  /* background-color: gray; */
-  /* overflow-x: auto;
-  white-space: nowrap; */
+/* Seat Booking */
+
+.bookingContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 40px;
+  width: 90%;
+  /* gap: 70px; */
+  /* padding: 20px; */
 }
-.seatParent {
-  width: 1500px;
-  background-color: white;
+.seatsContainer {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
-  /* overflow-x: auto;
-  white-space: nowrap; */
+  width: 768px;
+  gap: 30px;
+  padding: 20px;
 }
-.seatPriceRange {
+.seatsPriceSection {
   width: 100%;
-  text-align: start;
-  padding: 20px 0px;
-  margin-left: 50px;
-  border-bottom: 2px solid lightgray;
+  height: 30px;
+  border-bottom: 1px solid lightgrey;
+  color: lightgrey;
+  font-size: 16px;
 }
-.seatChild3,
-.seatChild2,
-.seatChild1 {
-  /* border: 2px solid black;
-  border-left: none;
-  border-right: none; */
+.bookingRowF {
   display: flex;
-  flex-direction: column;
-  overflow-x: auto;
-  white-space: nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* background-color: violet; */
+  gap: 20px;
 }
-.rowParentBox {
+.bookingRow {
   display: flex;
-  width: 1400px;
+  align-items: center;
+  width: 100%;
   justify-content: space-between;
-  overflow-x: auto;
-  white-space: nowrap;
 }
-.rowNameBox {
-  width: fit-content;
-  height: fit-content;
-  background-color: grey;
-  text-align: center;
-  display: flex;
-  align-content: center;
+.bookingRow-leftChild,
+.bookingRow-RightChild {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 300px;
+  gap: 20px;
 }
-.rowNumber {
-  width: 50px;
-  height: 50px;
+
+.seat-blocked {
+  filter: grayscale();
+}
+.seat-selected {
   background-color: green;
   color: white;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  cursor: pointer;
-  border: 2px solid;
 }
-.rowChildFlex-first {
-  display: flex;
-  width: 1400px;
-  justify-content: center;
-}
-.rowChildFlex {
-  display: flex;
-  gap: 200px;
-  width: fit-content;
-}
-
-.rowChildLeft {
-  width: fit-content;
-  height: 100%;
-  display: flex;
-}
-.rowChildRight {
-  width: fit-content;
-  height: 100%;
-  display: flex;
+.rowColor {
+  background-color: royalblue;
 }
 .seat {
-  min-width: 50px;
-  min-height: 50px;
-  background-color: purple;
-  color: white;
-  align-items: center;
+  width: 60px;
+  height: 60px;
   display: flex;
   justify-content: center;
+  align-items: center;
   cursor: pointer;
-  border: 2px solid;
+  color: white;
+  background-image: url("./assets/chairR.png");
+  background-size: contain;
+  border: none;
+  background-color: transparent;
 }
-.booked {
-  background-color: black;
-}
-/* .screenContainer {
-  width: 400px;
-  height: 400px;
 
-  margin-bottom: 200px;
-}
-.screenBack {
-  width: 100%;
-  height: 200px;
-  background-color: white;
-  margin-top: -220px;
+.rowNameBox {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  background-color: royalblue;
   border-radius: 50%;
 }
-.screenFront {
-  width: 100%;
-  height: 200px;
-  background-color: black;
-  border-radius: 50%;
-} */
-
+.rowName {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 60px;
+  height: 100%;
+  /* background-color: teal; */
+}
 .tv-container {
-  perspective: 300px; /* Set the perspective for 3D effect */
-  filter: drop-shadow(30px 10px 4px grey);
+  perspective: 300px;
+  filter: drop-shadow(30px 10px 4px royalblue);
+  margin-top: -80px;
 }
 
 .tv-screen {
-  width: 400px; /* Set the width of the TV screen */
-  height: 150px; /* Set the height of the TV screen */
-  background-image: url("https://images4.alphacoders.com/133/1336451.jpg"); /* Replace with the path to your TV image */
+  width: 400px;
+  height: 150px;
+  background-image: url("https://images4.alphacoders.com/133/1336451.jpg");
   background-size: cover;
-  transform: rotateX(
-    240deg
-  ); /* Adjust the rotation angle for the desired top view */
-  margin: 100px auto; /* Adjust the margin to position it on the floor */
+  transform: rotateX(240deg);
+  margin: 100px auto;
   position: relative;
 }
 
-/* Seat.jsx */
-@media only screen and (max-width: 375px) {
-  .wrapper {
-    zoom: 0.22;
+/* Navbar */
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+}
+.nav-wrapper {
+  width: 90%;
+  height: 80px;
+  background-color: #14213d;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+}
+.navLogo {
+  width: 250px;
+}
+.searchBar {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  width: fit-content;
+  width: 320px;
+  height: 10px;
+  padding: 20px 10px;
+}
+.searchInput {
+  border: none;
+  outline: none;
+  width: 280px;
+  padding-left: 5px;
+  font-size: 17px;
+}
+
+.accountButtons {
+  display: flex;
+  gap: 20px;
+}
+
+@media only screen and (min-width: 320px) {
+  .nav-wrapper {
+    /* background-color: orange; */
+    width: 100%;
+  }
+  .navLogo {
+    width: 130px;
+  }
+  .accountButtons {
+    gap: 2px;
+  }
+  .searchBar {
+    display: none;
   }
 }
-@media only screen and (min-width: 376px) and (max-width: 625px) {
-  .wrapper {
-    zoom: 0.28;
+@media only screen and (min-width: 390px) {
+  .nav-wrapper {
+    /* background-color: orange; */
+    width: 100%;
+  }
+  .navLogo {
+    width: 150px;
+  }
+  .accountButtons {
+    gap: 2px;
+  }
+  .searchBar {
+    display: none;
   }
 }
-@media only screen and (min-width: 625px) and (max-width: 900px) {
-  .wrapper {
-    zoom: 0.4;
+@media only screen and (min-width: 768px) {
+  .nav-wrapper {
+    width: 100%;
+  }
+  .navLogo {
+    width: 150px;
+  }
+  .accountButtons {
+    gap: 2px;
+  }
+  .searchBar {
+    display: flex;
   }
 }
-@media only screen and (min-width: 901px) and (max-width: 1200px) {
-  .wrapper {
-    zoom: 0.6;
+@media only screen and (min-width: 1024px) {
+  .nav-wrapper {
+    width: 100%;
+  }
+  .navLogo {
+    width: 200px;
+  }
+  .accountButtons {
+    gap: 10px;
   }
 }
-@media only screen and (min-width: 1025px) {
-  .wrapper {
-    zoom: 0.8;
-  }
+
+/* Carousol JSX */
+.carousol-container {
+  width: 100%;
+  height: 600px;
+  /* border: 2px solid black; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-image: fill 0 linear gradient(#0001, #000);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousol-textcontent {
+  color: white;
+  font-size: 60px;
+  font-weight: 900;
+  color: white;
+}
+
+/* homeContainer */
+.homeContainer {
+  background-color: #14213d;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.roundBox {
+  background-color: royalblue;
+  width: 40%;
+  height: 100px;
+  border: 2px solid white;
+  margin-top: -50px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
